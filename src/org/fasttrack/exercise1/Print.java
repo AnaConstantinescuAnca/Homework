@@ -1,0 +1,19 @@
+package org.fasttrack.exercise1;
+
+public class Print implements Advertisement {
+    public static final String Name = "print";
+    private int number = 0;
+
+    @Override
+    public String getTypeAdvertisement() {
+        return Name;
+    }
+
+    @Override
+    public int  numberAdvertisementOnWeek() {
+        for (int i = 1; i <= 7; i++) {
+            number++;
+        }
+        return number;
+    }
+}
